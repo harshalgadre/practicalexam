@@ -1,0 +1,1491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Practicals Exam Revision</title>
+<style>
+:root{--bg:#0b0d10;--panel:#13171c;--panel2:#191f26;--text:#edf1f5;--muted:#a0aab5;--line:#2a323b;--accent:#ff895f;--green:#78dba9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
+body{margin:0;background:radial-gradient(ellipse at top left,#19212a 0,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.head{max-width:1100px;margin:auto;padding:15px 20px}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.logo{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border-radius:12px;background:var(--accent);color:#17110e;font-weight:900;font-size:18px}
+h1{font-size:19px;line-height:1.2;margin:0}
+.subtitle{color:var(--muted);font-size:12px;margin-top:4px}
+.searchrow{display:flex;gap:9px;align-items:center}
+.searchbox{position:relative;flex:1}
+.searchbox span{position:absolute;left:13px;top:8px;color:var(--muted)}
+input[type=search]{width:100%;border:1px solid #39434e;border-radius:11px;background:#151a20;color:var(--text);padding:11px 13px 11px 39px;font:inherit;outline:none}
+input[type=search]:focus{border-color:var(--accent);box-shadow:0 0 0 3px #ff895f20}
+button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:9px;padding:8px 11px;font:inherit;cursor:pointer}
+button:hover{border-color:var(--accent);color:var(--accent)}
+main{max-width:1100px;margin:auto;padding:20px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:12px}
+.stats{color:var(--muted);font-size:12px}
+.section-title{display:flex;align-items:center;gap:10px;margin:25px 0 10px;font-size:16px}
+.section-title:after{content:"";height:1px;background:var(--line);flex:1}
+.question{border:1px solid var(--line);background:linear-gradient(145deg,#14191f,#101317);border-radius:13px;margin:10px 0;overflow:hidden}
+.qhead{padding:14px 16px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;cursor:pointer;list-style:none}
+.qhead::-webkit-details-marker{display:none}
+.qhead:focus-visible{outline:2px solid var(--accent);outline-offset:-3px}
+.qtitle{font-weight:650;font-size:14px;line-height:1.5}
+.qmeta{font-size:11px;color:var(--muted);white-space:nowrap}
+.question[open] .qmeta{color:var(--accent)}
+.qbody{padding:0 16px 16px}
+.codewrap{border:1px solid #303944;border-radius:10px;overflow:hidden;margin:10px 0 14px;background:#090c0f}
+.codehead{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#171d24;border-bottom:1px solid #303944;color:var(--muted);font-size:12px}
+.copy-btn{font-size:12px;padding:6px 10px}
+pre{margin:0;padding:14px;overflow:auto;max-height:none;tab-size:4}
+code{font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;white-space:pre}
+.empty{display:none;text-align:center;color:var(--muted);padding:35px 10px;border:1px dashed var(--line);border-radius:12px}
+footer{max-width:1100px;margin:auto;padding:5px 20px 30px;color:var(--muted);font-size:12px}
+@media(max-width:600px){main{padding:14px}.head{padding:13px 14px}.qhead{padding:12px}.qbody{padding:0 10px 12px}.qtitle{font-size:13px}pre{padding:11px}code{font-size:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <div class="brand"><div class="logo">Py</div><div><h1>Python Practicals — Exam Revision</h1><div class="subtitle">Complete practical questions · expandable answers · one-click code copying</div></div></div>
+    <div class="searchrow"><div class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search question, topic, function, or code…" autocomplete="off"></div><button id="clear" type="button">Clear</button></div>
+  </div>
+</header>
+<main>
+  <div class="toolbar"><div class="stats" id="stats">65 questions · all closed</div><button id="toggleAll" type="button">Open all</button></div>
+  <div id="questions">
+  <h2 class="section-title">PRACTICAL 1 — BASIC PYTHON PROGRAMS</h2>
+<details class="question" data-search="Q1(a) Q1(a). Write a program that asks the user to enter their name and age. Print a message addressed to them that tells them the year they will turn 100 years old. name = input(&quot;Enter your name:&quot;)
+age = int(input(&quot;Enter your age:&quot;))
+year = 2026 + (100 - age)
+print(&quot;Hello&quot;, name)
+print(&quot;You will turn 100 years old in&quot;, year)">
+          <summary class="qhead"><span class="qtitle">Q1(a). Write a program that asks the user to enter their name and age. Print a message addressed to them that tells them the year they will turn 100 years old.</span><span class="qmeta">Q1(a)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>name = input(&quot;Enter your name:&quot;)
+age = int(input(&quot;Enter your age:&quot;))
+year = 2026 + (100 - age)
+print(&quot;Hello&quot;, name)
+print(&quot;You will turn 100 years old in&quot;, year)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(b) Q1(b). Write a program to accept a number from the user and, depending on whether it is even or odd, print an appropriate message. num = int(input(&quot;Enter a number:&quot;))
+if num % 2 == 0:
+    print(&quot;Number is Even&quot;)
+else:
+    print(&quot;Number is Odd&quot;)">
+          <summary class="qhead"><span class="qtitle">Q1(b). Write a program to accept a number from the user and, depending on whether it is even or odd, print an appropriate message.</span><span class="qmeta">Q1(b)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = int(input(&quot;Enter a number:&quot;))
+if num % 2 == 0:
+    print(&quot;Number is Even&quot;)
+else:
+    print(&quot;Number is Odd&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(c) Q1(c). Write a program to accept SGPI and print the corresponding grade: 9.00–10.00: O 8.00–8.99: A+ 7.00–7.99: A 6.00–6.99: B+ 5.50–5.99: B 5.00–5.49: C 4.00–4.99: P Below 4: F sgpi = float(input(&quot;Enter your SGPI:&quot;))
+
+if 9.00 &lt;= sgpi &lt;= 10.00:
+    print(&quot;Grade O&quot;)
+elif 8.00 &lt;= sgpi &lt; 9.00:
+    print(&quot;Grade A+&quot;)
+elif 7.00 &lt;= sgpi &lt; 8.00:
+    print(&quot;Grade A&quot;)
+elif 6.00 &lt;= sgpi &lt; 7.00:
+    print(&quot;Grade B+&quot;)
+elif 5.50 &lt;= sgpi &lt; 6.00:
+    print(&quot;Grade B&quot;)
+elif 5.00 &lt;= sgpi &lt; 5.50:
+    print(&quot;Grade C&quot;)
+elif 4.00 &lt;= sgpi &lt; 5.00:
+    print(&quot;Grade P&quot;)
+elif 0 &lt;= sgpi &lt; 4.00:
+    print(&quot;Grade F&quot;)
+else:
+    print(&quot;Invalid SGPI&quot;)">
+          <summary class="qhead"><span class="qtitle">Q1(c). Write a program to accept SGPI and print the corresponding grade: 9.00–10.00: O 8.00–8.99: A+ 7.00–7.99: A 6.00–6.99: B+ 5.50–5.99: B 5.00–5.49: C 4.00–4.99: P Below 4: F</span><span class="qmeta">Q1(c)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>sgpi = float(input(&quot;Enter your SGPI:&quot;))
+
+if 9.00 &lt;= sgpi &lt;= 10.00:
+    print(&quot;Grade O&quot;)
+elif 8.00 &lt;= sgpi &lt; 9.00:
+    print(&quot;Grade A+&quot;)
+elif 7.00 &lt;= sgpi &lt; 8.00:
+    print(&quot;Grade A&quot;)
+elif 6.00 &lt;= sgpi &lt; 7.00:
+    print(&quot;Grade B+&quot;)
+elif 5.50 &lt;= sgpi &lt; 6.00:
+    print(&quot;Grade B&quot;)
+elif 5.00 &lt;= sgpi &lt; 5.50:
+    print(&quot;Grade C&quot;)
+elif 4.00 &lt;= sgpi &lt; 5.00:
+    print(&quot;Grade P&quot;)
+elif 0 &lt;= sgpi &lt; 4.00:
+    print(&quot;Grade F&quot;)
+else:
+    print(&quot;Invalid SGPI&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(d) Q1(d). Write a program to print the factorial of a given number. num = int(input(&quot;Enter a number:&quot;))
+fact = 1
+
+if num &lt; 0:
+    print(&quot;Factorial is not defined for negative numbers&quot;)
+else:
+    for i in range(1, num + 1):
+        fact *= i
+    print(&quot;The factorial for the given number is&quot;, fact)">
+          <summary class="qhead"><span class="qtitle">Q1(d). Write a program to print the factorial of a given number.</span><span class="qmeta">Q1(d)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = int(input(&quot;Enter a number:&quot;))
+fact = 1
+
+if num &lt; 0:
+    print(&quot;Factorial is not defined for negative numbers&quot;)
+else:
+    for i in range(1, num + 1):
+        fact *= i
+    print(&quot;The factorial for the given number is&quot;, fact)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(e) Q1(e). Write a program to print the following output: A BC DEF GHIJ ch = ord(&#x27;A&#x27;)
+for i in range(1, 5):
+    for j in range(i):
+        print(chr(ch), end=&quot;&quot;)
+        ch += 1
+    print()">
+          <summary class="qhead"><span class="qtitle">Q1(e). Write a program to print the following output: A BC DEF GHIJ</span><span class="qmeta">Q1(e)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>ch = ord(&#x27;A&#x27;)
+for i in range(1, 5):
+    for j in range(i):
+        print(chr(ch), end=&quot;&quot;)
+        ch += 1
+    print()</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(f) Q1(f). Write a program that reverses a user-defined value and checks whether that number is a palindrome or not. num = input(&quot;Enter a number:&quot;)
+if num == num[::-1]:
+    print(num, &quot;is a palindrome&quot;)
+else:
+    print(num, &quot;is not a palindrome&quot;)">
+          <summary class="qhead"><span class="qtitle">Q1(f). Write a program that reverses a user-defined value and checks whether that number is a palindrome or not.</span><span class="qmeta">Q1(f)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = input(&quot;Enter a number:&quot;)
+if num == num[::-1]:
+    print(num, &quot;is a palindrome&quot;)
+else:
+    print(num, &quot;is not a palindrome&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q1(g) Q1(g). Write a program to check whether the input value is an Armstrong number. num = int(input(&quot;Enter a number:&quot;))
+original = num
+total = 0
+digits = len(str(num))
+
+while num &gt; 0:
+    digit = num % 10
+    total += digit ** digits
+    num //= 10
+
+if total == original:
+    print(original, &quot;is an Armstrong number&quot;)
+else:
+    print(original, &quot;is not an Armstrong number&quot;)">
+          <summary class="qhead"><span class="qtitle">Q1(g). Write a program to check whether the input value is an Armstrong number.</span><span class="qmeta">Q1(g)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = int(input(&quot;Enter a number:&quot;))
+original = num
+total = 0
+digits = len(str(num))
+
+while num &gt; 0:
+    digit = num % 10
+    total += digit ** digits
+    num //= 10
+
+if total == original:
+    print(original, &quot;is an Armstrong number&quot;)
+else:
+    print(original, &quot;is not an Armstrong number&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 2 — CONTROL STATEMENTS &amp; LOOPS</h2>
+<details class="question" data-search="Q2(1) Q2(1). Write a program to generate the Fibonacci series. n = int(input(&quot;Enter number of terms:&quot;))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=&quot; &quot;)
+    a, b = b, a + b">
+          <summary class="qhead"><span class="qtitle">Q2(1). Write a program to generate the Fibonacci series.</span><span class="qmeta">Q2(1)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>n = int(input(&quot;Enter number of terms:&quot;))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=&quot; &quot;)
+    a, b = b, a + b</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(2) Q2(2). Write a program to accept a number from the user and display the sum of its digits. num = int(input(&quot;Enter a number:&quot;))
+num = abs(num)
+digit_sum = 0
+
+while num &gt; 0:
+    digit = num % 10
+    digit_sum += digit
+    num //= 10
+
+print(&quot;Sum of digits =&quot;, digit_sum)">
+          <summary class="qhead"><span class="qtitle">Q2(2). Write a program to accept a number from the user and display the sum of its digits.</span><span class="qmeta">Q2(2)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = int(input(&quot;Enter a number:&quot;))
+num = abs(num)
+digit_sum = 0
+
+while num &gt; 0:
+    digit = num % 10
+    digit_sum += digit
+    num //= 10
+
+print(&quot;Sum of digits =&quot;, digit_sum)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(3) Q2(3). Write a program to display all even numbers from 1 to 100. for i in range(2, 101, 2):
+    print(i, end=&quot; &quot;)">
+          <summary class="qhead"><span class="qtitle">Q2(3). Write a program to display all even numbers from 1 to 100.</span><span class="qmeta">Q2(3)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>for i in range(2, 101, 2):
+    print(i, end=&quot; &quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(4) Q2(4). Write a program to find the largest among three numbers. a = int(input(&quot;Enter first number:&quot;))
+b = int(input(&quot;Enter second number:&quot;))
+c = int(input(&quot;Enter third number:&quot;))
+
+if a &gt;= b and a &gt;= c:
+    print(&quot;Largest number is:&quot;, a)
+elif b &gt;= a and b &gt;= c:
+    print(&quot;Largest number is:&quot;, b)
+else:
+    print(&quot;Largest number is:&quot;, c)">
+          <summary class="qhead"><span class="qtitle">Q2(4). Write a program to find the largest among three numbers.</span><span class="qmeta">Q2(4)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>a = int(input(&quot;Enter first number:&quot;))
+b = int(input(&quot;Enter second number:&quot;))
+c = int(input(&quot;Enter third number:&quot;))
+
+if a &gt;= b and a &gt;= c:
+    print(&quot;Largest number is:&quot;, a)
+elif b &gt;= a and b &gt;= c:
+    print(&quot;Largest number is:&quot;, b)
+else:
+    print(&quot;Largest number is:&quot;, c)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(5) Q2(5). Write a program to print the multiplication table of a given number. num = int(input(&quot;Enter a number:&quot;))
+for i in range(1, 11):
+    print(num, &quot;x&quot;, i, &quot;=&quot;, num * i)">
+          <summary class="qhead"><span class="qtitle">Q2(5). Write a program to print the multiplication table of a given number.</span><span class="qmeta">Q2(5)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>num = int(input(&quot;Enter a number:&quot;))
+for i in range(1, 11):
+    print(num, &quot;x&quot;, i, &quot;=&quot;, num * i)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(6) Q2(6). Write a program that prints numbers from 1 to 10 but skips the number 5 using continue. for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)">
+          <summary class="qhead"><span class="qtitle">Q2(6). Write a program that prints numbers from 1 to 10 but skips the number 5 using continue.</span><span class="qmeta">Q2(6)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(7) Q2(7). Write a program to print numbers from 1 to 10 but stop the loop if number 7 is encountered using break. for i in range(1, 11):
+    if i == 7:
+        break
+    print(i, end=&quot; &quot;)">
+          <summary class="qhead"><span class="qtitle">Q2(7). Write a program to print numbers from 1 to 10 but stop the loop if number 7 is encountered using break.</span><span class="qmeta">Q2(7)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>for i in range(1, 11):
+    if i == 7:
+        break
+    print(i, end=&quot; &quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(8) Q2(8). Write a program where a loop runs from 1 to 5. Use pass to do nothing when the number is 3. for i in range(1, 6):
+    if i == 3:
+        pass
+    print(i)">
+          <summary class="qhead"><span class="qtitle">Q2(8). Write a program where a loop runs from 1 to 5. Use pass to do nothing when the number is 3.</span><span class="qmeta">Q2(8)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>for i in range(1, 6):
+    if i == 3:
+        pass
+    print(i)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q2(9) Q2(9). Write a program to print numbers from 1 to 10 using a while loop. i = 1
+while i &lt;= 10:
+    print(i)
+    i += 1">
+          <summary class="qhead"><span class="qtitle">Q2(9). Write a program to print numbers from 1 to 10 using a while loop.</span><span class="qmeta">Q2(9)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>i = 1
+while i &lt;= 10:
+    print(i)
+    i += 1</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 3 — INDEXING, SLICING &amp; FUNCTIONS</h2>
+<details class="question" data-search="Q3(1) Q3(1). Write a program to perform basic operations, indexing and slicing on arrays. (The supplied code actually uses a string and demonstrates indexing/slicing.) s = &quot;SYBSCIT DIVISION A PYTHON PRACTICAL&quot;
+print(s[1:4])
+print(s[1:])
+print(s[:])
+print(s[1:100])
+print(s[-4])
+print(s[:-3])
+print(s[-3])
+print(s[-1:-30:-1])
+print(s[:-3:-1])
+print(s[::-1])
+print(s[2:8:2])
+print(s[8:1:-2])
+print(s[2:1:-1])">
+          <summary class="qhead"><span class="qtitle">Q3(1). Write a program to perform basic operations, indexing and slicing on arrays. (The supplied code actually uses a string and demonstrates indexing/slicing.)</span><span class="qmeta">Q3(1)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>s = &quot;SYBSCIT DIVISION A PYTHON PRACTICAL&quot;
+print(s[1:4])
+print(s[1:])
+print(s[:])
+print(s[1:100])
+print(s[-4])
+print(s[:-3])
+print(s[-3])
+print(s[-1:-30:-1])
+print(s[:-3:-1])
+print(s[::-1])
+print(s[2:8:2])
+print(s[8:1:-2])
+print(s[2:1:-1])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q3(2) Q3(2). Write a program to implement mathematical functions on arrays. (The PDF’s code uses functions from Python’s math module.) import math
+a = math.floor(4.7)
+b = math.sqrt(25)
+c = math.pow(4, 2)
+d = math.ceil(4.5)
+e = math.fabs(-5.5)
+f = math.factorial(5)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)">
+          <summary class="qhead"><span class="qtitle">Q3(2). Write a program to implement mathematical functions on arrays. (The PDF’s code uses functions from Python’s math module.)</span><span class="qmeta">Q3(2)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import math
+a = math.floor(4.7)
+b = math.sqrt(25)
+c = math.pow(4, 2)
+d = math.ceil(4.5)
+e = math.fabs(-5.5)
+f = math.factorial(5)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q3(3) Q3(3). Write a program to perform array aliasing and copying. import numpy as np
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = arr1
+arr2[0] = 100
+print(&quot;Original Array after aliasing:&quot;, arr1)
+
+copy_arr = arr1.copy()
+copy_arr[1] = 200
+print(&quot;Original array after copying:&quot;, arr1)
+print(&quot;Copied array:&quot;, copy_arr)">
+          <summary class="qhead"><span class="qtitle">Q3(3). Write a program to perform array aliasing and copying.</span><span class="qmeta">Q3(3)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = arr1
+arr2[0] = 100
+print(&quot;Original Array after aliasing:&quot;, arr1)
+
+copy_arr = arr1.copy()
+copy_arr[1] = 200
+print(&quot;Original array after copying:&quot;, arr1)
+print(&quot;Copied array:&quot;, copy_arr)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q3(4) Q3(4). Write a program to add two numbers using a function. (The question is present, but its answer area is blank in the PDF.) def add(a, b):
+    return a + b
+
+num1 = int(input(&quot;Enter first number:&quot;))
+num2 = int(input(&quot;Enter second number:&quot;))
+print(&quot;Sum =&quot;, add(num1, num2))">
+          <summary class="qhead"><span class="qtitle">Q3(4). Write a program to add two numbers using a function. (The question is present, but its answer area is blank in the PDF.)</span><span class="qmeta">Q3(4)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def add(a, b):
+    return a + b
+
+num1 = int(input(&quot;Enter first number:&quot;))
+num2 = int(input(&quot;Enter second number:&quot;))
+print(&quot;Sum =&quot;, add(num1, num2))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q3(5) Q3(5). Write a program to calculate the circumference and area of a circle. (The question is present, but its answer area is blank in the PDF.) import math
+radius = float(input(&quot;Enter radius:&quot;))
+area = math.pi * radius * radius
+circumference = 2 * math.pi * radius
+print(&quot;Area =&quot;, area)
+print(&quot;Circumference =&quot;, circumference)">
+          <summary class="qhead"><span class="qtitle">Q3(5). Write a program to calculate the circumference and area of a circle. (The question is present, but its answer area is blank in the PDF.)</span><span class="qmeta">Q3(5)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import math
+radius = float(input(&quot;Enter radius:&quot;))
+area = math.pi * radius * radius
+circumference = 2 * math.pi * radius
+print(&quot;Area =&quot;, area)
+print(&quot;Circumference =&quot;, circumference)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q3(6) Q3(6). Write a program to calculate the area of a triangle. (The question is present, but its answer area is blank in the PDF.) base = float(input(&quot;Enter base:&quot;))
+height = float(input(&quot;Enter height:&quot;))
+area = 0.5 * base * height
+print(&quot;Area of triangle =&quot;, area)">
+          <summary class="qhead"><span class="qtitle">Q3(6). Write a program to calculate the area of a triangle. (The question is present, but its answer area is blank in the PDF.)</span><span class="qmeta">Q3(6)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>base = float(input(&quot;Enter base:&quot;))
+height = float(input(&quot;Enter height:&quot;))
+area = 0.5 * base * height
+print(&quot;Area of triangle =&quot;, area)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 4 — PYTHON ARRAYS &amp; NUMPY</h2>
+<details class="question" data-search="Q4(a) Q4(a). Write a program to perform basic operations on arrays. (The PDF gives two Python array examples; the second has a typo in the type code.) import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3])
+print(&quot;First element:&quot;, a[0])
+a.append(5)
+print(&quot;Array after append:&quot;, a)
+
+for i in range(len(a)):
+    print(a[i], end=&quot; &quot;)">
+          <summary class="qhead"><span class="qtitle">Q4(a). Write a program to perform basic operations on arrays. (The PDF gives two Python array examples; the second has a typo in the type code.)</span><span class="qmeta">Q4(a)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3])
+print(&quot;First element:&quot;, a[0])
+a.append(5)
+print(&quot;Array after append:&quot;, a)
+
+for i in range(len(a)):
+    print(a[i], end=&quot; &quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(b) Q4(b). Write a program to perform slicing on an array. import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+part = arr[3:8]
+print(part)
+part = arr[5:]
+print(part)
+part = arr[:]
+print(part)">
+          <summary class="qhead"><span class="qtitle">Q4(b). Write a program to perform slicing on an array.</span><span class="qmeta">Q4(b)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+part = arr[3:8]
+print(part)
+part = arr[5:]
+print(part)
+part = arr[:]
+print(part)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(c) Q4(c). Write a program to add elements to an array. import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3])
+print(&quot;Original array:&quot;, a)
+a.insert(1, 4)
+print(&quot;After inserting 4 at index 1:&quot;, a)">
+          <summary class="qhead"><span class="qtitle">Q4(c). Write a program to add elements to an array.</span><span class="qmeta">Q4(c)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3])
+print(&quot;Original array:&quot;, a)
+a.insert(1, 4)
+print(&quot;After inserting 4 at index 1:&quot;, a)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(d) Q4(d). Write a program to access array elements. import array as arr
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 4, 5, 6])
+print(a[0])
+print(a[3])
+b = arr.array(&#x27;d&#x27;, [2.5, 3.2, 3.3])
+print(b[1])
+print(b[2])">
+          <summary class="qhead"><span class="qtitle">Q4(d). Write a program to access array elements.</span><span class="qmeta">Q4(d)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import array as arr
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 4, 5, 6])
+print(a[0])
+print(a[3])
+b = arr.array(&#x27;d&#x27;, [2.5, 3.2, 3.3])
+print(b[1])
+print(b[2])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(e) Q4(e). Write a program to remove elements from an array. import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 1, 5])
+a.remove(1)
+print(a)
+a.pop(2)
+print(a)">
+          <summary class="qhead"><span class="qtitle">Q4(e). Write a program to remove elements from an array.</span><span class="qmeta">Q4(e)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 1, 5])
+a.remove(1)
+print(a)
+a.pop(2)
+print(a)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(f) Q4(f). Write a program to reverse elements in an array. import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 1, 5])
+a.reverse()
+print(a)">
+          <summary class="qhead"><span class="qtitle">Q4(f). Write a program to reverse elements in an array.</span><span class="qmeta">Q4(f)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import array as arr
+
+a = arr.array(&#x27;i&#x27;, [1, 2, 3, 1, 5])
+a.reverse()
+print(a)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(g) Q4(g). Write a program to perform basic and advanced indexing on NumPy arrays. import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr[2] + arr[3])
+arr2 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(arr2[0, 1])">
+          <summary class="qhead"><span class="qtitle">Q4(g). Write a program to perform basic and advanced indexing on NumPy arrays.</span><span class="qmeta">Q4(g)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr[2] + arr[3])
+arr2 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(arr2[0, 1])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(h) Q4(h). NumPy arithmetic array operations. (The PDF repeats the array addition and 2D indexing examples.) import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(&quot;Addition of elements at index 2 and 3:&quot;, arr[2] + arr[3])
+arr1 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(&quot;Second element in first row:&quot;, arr1[0, 1])">
+          <summary class="qhead"><span class="qtitle">Q4(h). NumPy arithmetic array operations. (The PDF repeats the array addition and 2D indexing examples.)</span><span class="qmeta">Q4(h)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(&quot;Addition of elements at index 2 and 3:&quot;, arr[2] + arr[3])
+arr1 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(&quot;Second element in first row:&quot;, arr1[0, 1])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q4(i) Q4(i). Write a program to analyze dimensions and attributes of arrays. import numpy as np
+array1 = np.array([[2, 4, 6], [1, 2, 3]])
+print(&quot;Dimensions:&quot;, array1.ndim)
+print(&quot;Total elements:&quot;, array1.size)
+print(&quot;Shape:&quot;, array1.shape)">
+          <summary class="qhead"><span class="qtitle">Q4(i). Write a program to analyze dimensions and attributes of arrays.</span><span class="qmeta">Q4(i)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+array1 = np.array([[2, 4, 6], [1, 2, 3]])
+print(&quot;Dimensions:&quot;, array1.ndim)
+print(&quot;Total elements:&quot;, array1.size)
+print(&quot;Shape:&quot;, array1.shape)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 5 — FUNCTIONS &amp; STRINGS</h2>
+<details class="question" data-search="Q5(a)(i) Q5(a)(i). Write a function to check whether the input value is an Armstrong number. def is_armstrong(num):
+    original = num
+    total = 0
+    digits = len(str(num))
+    while num &gt; 0:
+        digit = num % 10
+        total += digit ** digits
+        num //= 10
+    if total == original:
+        print(original, &quot;is an Armstrong number&quot;)
+    else:
+        print(original, &quot;is not an Armstrong number&quot;)
+
+n = int(input(&quot;Enter a number:&quot;))
+is_armstrong(n)">
+          <summary class="qhead"><span class="qtitle">Q5(a)(i). Write a function to check whether the input value is an Armstrong number.</span><span class="qmeta">Q5(a)(i)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def is_armstrong(num):
+    original = num
+    total = 0
+    digits = len(str(num))
+    while num &gt; 0:
+        digit = num % 10
+        total += digit ** digits
+        num //= 10
+    if total == original:
+        print(original, &quot;is an Armstrong number&quot;)
+    else:
+        print(original, &quot;is not an Armstrong number&quot;)
+
+n = int(input(&quot;Enter a number:&quot;))
+is_armstrong(n)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(a)(ii) Q5(a)(ii). Write a function to check whether a number is a palindrome. def is_palindrome(num):
+    original = num
+    reversed_num = 0
+    while num &gt; 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num //= 10
+    if original == reversed_num:
+        print(original, &quot;is a palindrome number&quot;)
+    else:
+        print(original, &quot;is not a palindrome number&quot;)
+
+n = int(input(&quot;Enter a number:&quot;))
+is_palindrome(n)">
+          <summary class="qhead"><span class="qtitle">Q5(a)(ii). Write a function to check whether a number is a palindrome.</span><span class="qmeta">Q5(a)(ii)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def is_palindrome(num):
+    original = num
+    reversed_num = 0
+    while num &gt; 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num //= 10
+    if original == reversed_num:
+        print(original, &quot;is a palindrome number&quot;)
+    else:
+        print(original, &quot;is not a palindrome number&quot;)
+
+n = int(input(&quot;Enter a number:&quot;))
+is_palindrome(n)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(b) Q5(b). Write a recursive function to print the factorial of a given number. def factorial(n):
+    if n &lt; 0:
+        return &quot;Factorial is not defined for negative numbers&quot;
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+num = int(input(&quot;Enter a number:&quot;))
+print(&quot;Factorial is:&quot;, factorial(num))">
+          <summary class="qhead"><span class="qtitle">Q5(b). Write a recursive function to print the factorial of a given number.</span><span class="qmeta">Q5(b)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def factorial(n):
+    if n &lt; 0:
+        return &quot;Factorial is not defined for negative numbers&quot;
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+num = int(input(&quot;Enter a number:&quot;))
+print(&quot;Factorial is:&quot;, factorial(num))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(c) Q5(c). Write a lambda function that checks whether a given string starts with a specific character. starts_with = lambda text, char: text.startswith(char)
+print(starts_with(&quot;python&quot;, &quot;p&quot;))
+print(starts_with(&quot;mongo&quot;, &quot;m&quot;))
+print(starts_with(&quot;mongo&quot;, &quot;h&quot;))
+print(starts_with(&quot;python&quot;, &quot;g&quot;))">
+          <summary class="qhead"><span class="qtitle">Q5(c). Write a lambda function that checks whether a given string starts with a specific character.</span><span class="qmeta">Q5(c)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>starts_with = lambda text, char: text.startswith(char)
+print(starts_with(&quot;python&quot;, &quot;p&quot;))
+print(starts_with(&quot;mongo&quot;, &quot;m&quot;))
+print(starts_with(&quot;mongo&quot;, &quot;h&quot;))
+print(starts_with(&quot;python&quot;, &quot;g&quot;))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(d) Q5(d). Write a Python program to traverse a string using a while loop. text = &quot;harshal gadre&quot;
+index = 0
+while index &lt; len(text):
+    print(text[index])
+    index += 1">
+          <summary class="qhead"><span class="qtitle">Q5(d). Write a Python program to traverse a string using a while loop.</span><span class="qmeta">Q5(d)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>text = &quot;harshal gadre&quot;
+index = 0
+while index &lt; len(text):
+    print(text[index])
+    index += 1</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(e) Q5(e). Write a Python program to traverse a string using a for loop. text = &quot;python&quot;
+for char in text:
+    print(char)">
+          <summary class="qhead"><span class="qtitle">Q5(e). Write a Python program to traverse a string using a for loop.</span><span class="qmeta">Q5(e)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>text = &quot;python&quot;
+for char in text:
+    print(char)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(f) Q5(f). Write a Python program to search for letter ‘p’ in the word “python programming”. OR: Write a function that takes a character and finds the index where that character appears. If the character is not found, return -1. def find_letter(word, letter):
+    for i in range(len(word)):
+        if word[i] == letter:
+            return i
+    return -1
+
+print(find_letter(&quot;python programming&quot;, &quot;p&quot;))
+print(find_letter(&quot;python&quot;, &quot;t&quot;))
+print(find_letter(&quot;python&quot;, &quot;z&quot;))">
+          <summary class="qhead"><span class="qtitle">Q5(f). Write a Python program to search for letter ‘p’ in the word “python programming”. OR: Write a function that takes a character and finds the index where that character appears. If the character is not found, return -1.</span><span class="qmeta">Q5(f)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def find_letter(word, letter):
+    for i in range(len(word)):
+        if word[i] == letter:
+            return i
+    return -1
+
+print(find_letter(&quot;python programming&quot;, &quot;p&quot;))
+print(find_letter(&quot;python&quot;, &quot;t&quot;))
+print(find_letter(&quot;python&quot;, &quot;z&quot;))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q5(g) Q5(g). Write a Python program to count how many times letter ‘p’ appears in “python programming”. word = &quot;python programming&quot;
+letter = &quot;p&quot;
+count_result = word.count(letter)
+print(&quot;The letter &#x27;p&#x27; appears&quot;, count_result, &quot;times.&quot;)">
+          <summary class="qhead"><span class="qtitle">Q5(g). Write a Python program to count how many times letter ‘p’ appears in “python programming”.</span><span class="qmeta">Q5(g)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>word = &quot;python programming&quot;
+letter = &quot;p&quot;
+count_result = word.count(letter)
+print(&quot;The letter &#x27;p&#x27; appears&quot;, count_result, &quot;times.&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 6 — FUNCTIONS &amp; NUMPY</h2>
+<details class="question" data-search="Q6(a) Q6(a). Write a program to compute the number of characters and digits in a string. s = input(&quot;Input string:&quot;)
+digits = 0
+letters = 0
+
+for char in s:
+    if char.isdigit():
+        digits += 1
+    elif char.isalpha():
+        letters += 1
+
+print(&quot;Digits:&quot;, digits)
+print(&quot;Characters/letters:&quot;, letters)">
+          <summary class="qhead"><span class="qtitle">Q6(a). Write a program to compute the number of characters and digits in a string.</span><span class="qmeta">Q6(a)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>s = input(&quot;Input string:&quot;)
+digits = 0
+letters = 0
+
+for char in s:
+    if char.isdigit():
+        digits += 1
+    elif char.isalpha():
+        letters += 1
+
+print(&quot;Digits:&quot;, digits)
+print(&quot;Characters/letters:&quot;, letters)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q6(b) Q6(b). Create a file geometry.py to calculate base areas for a square and circle. In another file, write pointyShapeVolume(x, y, squareBase) to calculate the volume of a square pyramid if squareBase is True and a right circular cone if False. Use circleArea and squareArea from the geometry module. import math
+
+def squareArea(edge):
+    return edge * edge
+
+def circleArea(radius):
+    return math.pi * radius * radius import geometry
+
+def pointyShapeVolume(x, y, squareBase):
+    if squareBase:
+        base_area = geometry.squareArea(x)
+    else:
+        base_area = geometry.circleArea(x)
+
+    volume = (1 / 3) * base_area * y
+    return volume
+
+def main():
+    edge = float(input(&quot;Enter square side/edge:&quot;))
+    height = float(input(&quot;Enter pyramid height:&quot;))
+    pyramid_vol = pointyShapeVolume(edge, height, True)
+    print(f&quot;Square Pyramid Volume: {pyramid_vol:.2f}&quot;)
+
+    radius = float(input(&quot;Enter cone radius:&quot;))
+    height = float(input(&quot;Enter cone height:&quot;))
+    cone_vol = pointyShapeVolume(radius, height, False)
+    print(f&quot;Cone Volume: {cone_vol:.2f}&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()">
+          <summary class="qhead"><span class="qtitle">Q6(b). Create a file geometry.py to calculate base areas for a square and circle. In another file, write pointyShapeVolume(x, y, squareBase) to calculate the volume of a square pyramid if squareBase is True and a right circular cone if False. Use circleArea and squareArea from the geometry module.</span><span class="qmeta">Q6(b)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>geometry.py</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import math
+
+def squareArea(edge):
+    return edge * edge
+
+def circleArea(radius):
+    return math.pi * radius * radius</code></pre>
+            </div><div class="codewrap">
+              <div class="codehead"><span>main.py</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import geometry
+
+def pointyShapeVolume(x, y, squareBase):
+    if squareBase:
+        base_area = geometry.squareArea(x)
+    else:
+        base_area = geometry.circleArea(x)
+
+    volume = (1 / 3) * base_area * y
+    return volume
+
+def main():
+    edge = float(input(&quot;Enter square side/edge:&quot;))
+    height = float(input(&quot;Enter pyramid height:&quot;))
+    pyramid_vol = pointyShapeVolume(edge, height, True)
+    print(f&quot;Square Pyramid Volume: {pyramid_vol:.2f}&quot;)
+
+    radius = float(input(&quot;Enter cone radius:&quot;))
+    height = float(input(&quot;Enter cone height:&quot;))
+    cone_vol = pointyShapeVolume(radius, height, False)
+    print(f&quot;Cone Volume: {cone_vol:.2f}&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q6(c) Q6(c). Write a Python program for 2D NumPy arrays and perform matrix multiplication. import numpy as np
+a = np.array([[2, 3], [4, 5]])
+b = np.array([[5, 6], [6, 7]])
+print(&quot;Matrix A:&quot;, a)
+print(&quot;Matrix B:&quot;, b)
+result = np.matmul(a, b)
+print(&quot;Result:&quot;, result)">
+          <summary class="qhead"><span class="qtitle">Q6(c). Write a Python program for 2D NumPy arrays and perform matrix multiplication.</span><span class="qmeta">Q6(c)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+a = np.array([[2, 3], [4, 5]])
+b = np.array([[5, 6], [6, 7]])
+print(&quot;Matrix A:&quot;, a)
+print(&quot;Matrix B:&quot;, b)
+result = np.matmul(a, b)
+print(&quot;Result:&quot;, result)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q6(d) Q6(d). Write a program to create a 3×3 array filled with zeros. import numpy as np
+array_ints = np.zeros((3, 3),
+dtype=int)
+print(array_ints)">
+          <summary class="qhead"><span class="qtitle">Q6(d). Write a program to create a 3×3 array filled with zeros.</span><span class="qmeta">Q6(d)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+array_ints = np.zeros((3, 3),
+dtype=int)
+print(array_ints)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q6(e) Q6(e). Write a program to transpose a matrix. import numpy as np
+m = np.array([[2, 3, 4], [5, 6, 7]])
+transposed = m.T
+print(&quot;Original matrix:&quot;, m)
+print(&quot;Transposed matrix:&quot;, transposed)">
+          <summary class="qhead"><span class="qtitle">Q6(e). Write a program to transpose a matrix.</span><span class="qmeta">Q6(e)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import numpy as np
+m = np.array([[2, 3, 4], [5, 6, 7]])
+transposed = m.T
+print(&quot;Original matrix:&quot;, m)
+print(&quot;Transposed matrix:&quot;, transposed)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 7 — LISTS</h2>
+<details class="question" data-search="Q7(a) Q7(a). Write a program that takes two lists and returns True if they have at least one common member. def common_data(list1, list2):
+    for x in list1:
+        for y in list2:
+            if x == y:
+                return True
+    return False
+
+print(common_data([1, 2, 3, 4, 5], [5, 6, 7, 8, 9]))
+print(common_data([1, 2, 3, 4, 5], [6, 7, 8, 9]))">
+          <summary class="qhead"><span class="qtitle">Q7(a). Write a program that takes two lists and returns True if they have at least one common member.</span><span class="qmeta">Q7(a)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def common_data(list1, list2):
+    for x in list1:
+        for y in list2:
+            if x == y:
+                return True
+    return False
+
+print(common_data([1, 2, 3, 4, 5], [5, 6, 7, 8, 9]))
+print(common_data([1, 2, 3, 4, 5], [6, 7, 8, 9]))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(b) Q7(b). Write a Python script to sort a dictionary by value in ascending and descending order. (The supplied code sorts by key because it calls sorted(my_dict.items()); corrected here to sort by value.) my_dict = {&#x27;apple&#x27;: 10, &#x27;banana&#x27;: 5, &#x27;cherry&#x27;: 20, &#x27;date&#x27;: 15}
+asc = sorted(my_dict.items(),
+key=lambda item: item[1])
+desc = sorted(my_dict.items(),
+key=lambda item: item[1],
+reverse=True)
+print(&quot;Ascending order:&quot;, asc)
+print(&quot;Descending order:&quot;, desc)">
+          <summary class="qhead"><span class="qtitle">Q7(b). Write a Python script to sort a dictionary by value in ascending and descending order. (The supplied code sorts by key because it calls sorted(my_dict.items()); corrected here to sort by value.)</span><span class="qmeta">Q7(b)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>my_dict = {&#x27;apple&#x27;: 10, &#x27;banana&#x27;: 5, &#x27;cherry&#x27;: 20, &#x27;date&#x27;: 15}
+asc = sorted(my_dict.items(),
+key=lambda item: item[1])
+desc = sorted(my_dict.items(),
+key=lambda item: item[1],
+reverse=True)
+print(&quot;Ascending order:&quot;, asc)
+print(&quot;Descending order:&quot;, desc)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(c) Q7(c). Write a Python program to get the largest number from a list. def max_num_in_list(numbers):
+    largest = numbers[0]
+    for num in numbers:
+        if num &gt; largest:
+            largest = num
+    return largest
+
+print(max_num_in_list([1, 2, -8, 0]))">
+          <summary class="qhead"><span class="qtitle">Q7(c). Write a Python program to get the largest number from a list.</span><span class="qmeta">Q7(c)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def max_num_in_list(numbers):
+    largest = numbers[0]
+    for num in numbers:
+        if num &gt; largest:
+            largest = num
+    return largest
+
+print(max_num_in_list([1, 2, -8, 0]))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(d) Q7(d). Take five integer inputs from the user and store them in a list. Copy all elements into another list in reverse order. original_list = []
+for i in range(5):
+    num = int(input(f&quot;Enter integer {i + 1}: &quot;))
+    original_list.append(num)
+
+reversed_list = original_list[::-1]
+print(&quot;Original list:&quot;, original_list)
+print(&quot;Reversed list:&quot;, reversed_list)">
+          <summary class="qhead"><span class="qtitle">Q7(d). Take five integer inputs from the user and store them in a list. Copy all elements into another list in reverse order.</span><span class="qmeta">Q7(d)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>original_list = []
+for i in range(5):
+    num = int(input(f&quot;Enter integer {i + 1}: &quot;))
+    original_list.append(num)
+
+reversed_list = original_list[::-1]
+print(&quot;Original list:&quot;, original_list)
+print(&quot;Reversed list:&quot;, reversed_list)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(e) Q7(e). Write a program to access list elements. list1 = [&#x27;phy&#x27;, &#x27;che&#x27;, 1997, 2000]
+list2 = [1, 2, 3, 4, 5, 6, 7]
+print(&quot;Element at index 0:&quot;, list1[0])
+print(&quot;Elements from index 1 to 4:&quot;, list2[1:5])">
+          <summary class="qhead"><span class="qtitle">Q7(e). Write a program to access list elements.</span><span class="qmeta">Q7(e)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>list1 = [&#x27;phy&#x27;, &#x27;che&#x27;, 1997, 2000]
+list2 = [1, 2, 3, 4, 5, 6, 7]
+print(&quot;Element at index 0:&quot;, list1[0])
+print(&quot;Elements from index 1 to 4:&quot;, list2[1:5])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(f) Q7(f). Justify that lists are mutable with an example. list1 = [&#x27;phy&#x27;, &#x27;che&#x27;, 1997, 2000]
+print(&quot;Original element at index 2:&quot;, list1[2])
+list1[2] = 2001
+print(&quot;Changed element at index 2:&quot;, list1[2])
+print(&quot;Updated list:&quot;, list1)">
+          <summary class="qhead"><span class="qtitle">Q7(f). Justify that lists are mutable with an example.</span><span class="qmeta">Q7(f)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>list1 = [&#x27;phy&#x27;, &#x27;che&#x27;, 1997, 2000]
+print(&quot;Original element at index 2:&quot;, list1[2])
+list1[2] = 2001
+print(&quot;Changed element at index 2:&quot;, list1[2])
+print(&quot;Updated list:&quot;, list1)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(g) Q7(g). Write programs to add elements to a list. odd = [1, 3, 5]
+odd.append(7)
+print(&quot;After append:&quot;, odd)
+
+odd.extend([9, 11, 13])
+print(&quot;After extend:&quot;, odd)
+
+odd1 = [1, 9]
+odd1.insert(1, 3)
+print(&quot;After insert:&quot;, odd1)">
+          <summary class="qhead"><span class="qtitle">Q7(g). Write programs to add elements to a list.</span><span class="qmeta">Q7(g)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>odd = [1, 3, 5]
+odd.append(7)
+print(&quot;After append:&quot;, odd)
+
+odd.extend([9, 11, 13])
+print(&quot;After extend:&quot;, odd)
+
+odd1 = [1, 9]
+odd1.insert(1, 3)
+print(&quot;After insert:&quot;, odd1)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(h) Q7(h). Write a program that prints all elements from the list that are less than 5. a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for num in a:
+    if num &lt; 5:
+        print(&quot;Element below 5:&quot;, num)">
+          <summary class="qhead"><span class="qtitle">Q7(h). Write a program that prints all elements from the list that are less than 5.</span><span class="qmeta">Q7(h)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for num in a:
+    if num &lt; 5:
+        print(&quot;Element below 5:&quot;, num)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(i) Q7(i). Write a Python program to sum all items in a list. def sum_list(items):
+    total = 0
+    for x in items:
+        total += x
+    return total
+
+print(&quot;Sum of numbers:&quot;, sum_list([1, 2, 3, 4]))">
+          <summary class="qhead"><span class="qtitle">Q7(i). Write a Python program to sum all items in a list.</span><span class="qmeta">Q7(i)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>def sum_list(items):
+    total = 0
+    for x in items:
+        total += x
+    return total
+
+print(&quot;Sum of numbers:&quot;, sum_list([1, 2, 3, 4]))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q7(j) Q7(j). Write a Python program to print a specified list after removing the 0th, 2nd, 4th and 5th elements. (The supplied list has only five elements, so index 5 does not exist. The expected remaining elements are the elements not at indices 0, 2, 4 and 5.) items = [&#x27;red&#x27;, &#x27;green&#x27;, &#x27;blue&#x27;, &#x27;black&#x27;, &#x27;purple&#x27;]
+remove_indices = {0, 2, 4, 5}
+new_list = [value
+for index, value in enumerate(items)
+if index not in remove_indices]
+print(&quot;List after removing specified indices:&quot;, new_list)">
+          <summary class="qhead"><span class="qtitle">Q7(j). Write a Python program to print a specified list after removing the 0th, 2nd, 4th and 5th elements. (The supplied list has only five elements, so index 5 does not exist. The expected remaining elements are the elements not at indices 0, 2, 4 and 5.)</span><span class="qmeta">Q7(j)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>items = [&#x27;red&#x27;, &#x27;green&#x27;, &#x27;blue&#x27;, &#x27;black&#x27;, &#x27;purple&#x27;]
+remove_indices = {0, 2, 4, 5}
+new_list = [value
+for index, value in enumerate(items)
+if index not in remove_indices]
+print(&quot;List after removing specified indices:&quot;, new_list)</code></pre>
+            </div>
+          </div>
+        </details>
+<h2 class="section-title">PRACTICAL 8 — TUPLES &amp; DICTIONARIES</h2>
+<details class="question" data-search="Q8(1) Q8(1). Write a program to reverse the following tuple: (10, 20, 30, 40, 50). aTuple = (10, 20, 30, 40, 50)
+aTuple = aTuple[::-1]
+print(aTuple)">
+          <summary class="qhead"><span class="qtitle">Q8(1). Write a program to reverse the following tuple: (10, 20, 30, 40, 50).</span><span class="qmeta">Q8(1)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>aTuple = (10, 20, 30, 40, 50)
+aTuple = aTuple[::-1]
+print(aTuple)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(2) Q8(2). Copy elements 44 and 55 from the tuple (11, 22, 33, 44, 55, 66) into a new tuple. tuple1 = (11, 22, 33, 44, 55, 66)
+tuple2 = tuple1[3:5]
+print(tuple2)">
+          <summary class="qhead"><span class="qtitle">Q8(2). Copy elements 44 and 55 from the tuple (11, 22, 33, 44, 55, 66) into a new tuple.</span><span class="qmeta">Q8(2)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>tuple1 = (11, 22, 33, 44, 55, 66)
+tuple2 = tuple1[3:5]
+print(tuple2)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(3) Q8(3). Swap the following two tuples: tuple1 = (11, 22), tuple2 = (99, 88). tuple1 = (11, 22)
+tuple2 = (99, 88)
+tuple1, tuple2 = tuple2, tuple1
+print(tuple1)
+print(tuple2)">
+          <summary class="qhead"><span class="qtitle">Q8(3). Swap the following two tuples: tuple1 = (11, 22), tuple2 = (99, 88).</span><span class="qmeta">Q8(3)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>tuple1 = (11, 22)
+tuple2 = (99, 88)
+tuple1, tuple2 = tuple2, tuple1
+print(tuple1)
+print(tuple2)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(4) Q8(4). Write a program to delete elements from a dictionary. student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+del student[&#x27;name&#x27;]
+
+print(&quot;Dictionary after deletion:&quot;, student)
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])">
+          <summary class="qhead"><span class="qtitle">Q8(4). Write a program to delete elements from a dictionary.</span><span class="qmeta">Q8(4)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+del student[&#x27;name&#x27;]
+
+print(&quot;Dictionary after deletion:&quot;, student)
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(5) Q8(5). Write a program to check if value 200 exists in a dictionary. sampledict = {&#x27;a&#x27;: 100, &#x27;b&#x27;: 200, &#x27;c&#x27;: 300}
+print(200 in sampledict.values())">
+          <summary class="qhead"><span class="qtitle">Q8(5). Write a program to check if value 200 exists in a dictionary.</span><span class="qmeta">Q8(5)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>sampledict = {&#x27;a&#x27;: 100, &#x27;b&#x27;: 200, &#x27;c&#x27;: 300}
+print(200 in sampledict.values())</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(6) Q8(6). Write a Python program to sum all items in a dictionary. my_dict = {&#x27;data1&#x27;: 100, &#x27;data2&#x27;: 50, &#x27;data3&#x27;: 40}
+print(&quot;Sum of dictionary values:&quot;, sum(my_dict.values()))">
+          <summary class="qhead"><span class="qtitle">Q8(6). Write a Python program to sum all items in a dictionary.</span><span class="qmeta">Q8(6)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>my_dict = {&#x27;data1&#x27;: 100, &#x27;data2&#x27;: 50, &#x27;data3&#x27;: 40}
+print(&quot;Sum of dictionary values:&quot;, sum(my_dict.values()))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(7) Q8(7). Write a program to create a dictionary and use looping to display its contents. data = {&quot;a&quot;: 1, &quot;b&quot;: 2, &quot;c&quot;: 3}
+for key, value in data.items():
+    print(key, value)">
+          <summary class="qhead"><span class="qtitle">Q8(7). Write a program to create a dictionary and use looping to display its contents.</span><span class="qmeta">Q8(7)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>data = {&quot;a&quot;: 1, &quot;b&quot;: 2, &quot;c&quot;: 3}
+for key, value in data.items():
+    print(key, value)</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(8) Q8(8). Write a program to create a dictionary and access values from it. student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+print(&quot;Name:&quot;, student[&#x27;name&#x27;])
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])">
+          <summary class="qhead"><span class="qtitle">Q8(8). Write a program to create a dictionary and access values from it.</span><span class="qmeta">Q8(8)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+print(&quot;Name:&quot;, student[&#x27;name&#x27;])
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(9) Q8(9). Write a program to update a dictionary. student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+student[&#x27;age&#x27;] = 21
+student[&#x27;city&#x27;] = &#x27;Mumbai&#x27;
+
+print(&quot;Name:&quot;, student[&#x27;name&#x27;])
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])
+print(&quot;City:&quot;, student[&#x27;city&#x27;])">
+          <summary class="qhead"><span class="qtitle">Q8(9). Write a program to update a dictionary.</span><span class="qmeta">Q8(9)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>student = {&#x27;name&#x27;: &#x27;harshal&#x27;, &#x27;age&#x27;: 20, &#x27;class&#x27;: &#x27;first&#x27;}
+student[&#x27;age&#x27;] = 21
+student[&#x27;city&#x27;] = &#x27;Mumbai&#x27;
+
+print(&quot;Name:&quot;, student[&#x27;name&#x27;])
+print(&quot;Age:&quot;, student[&#x27;age&#x27;])
+print(&quot;Class:&quot;, student[&#x27;class&#x27;])
+print(&quot;City:&quot;, student[&#x27;city&#x27;])</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(10) Q8(10). Write a program for reverse lookup in a dictionary. dict1 = {&quot;1&quot;: &quot;a&quot;, &quot;2&quot;: &quot;b&quot;, &quot;3&quot;: &quot;c&quot;, &quot;4&quot;: &quot;d&quot;}
+
+def reverse_lookup(my_dict, target):
+    for key, value in my_dict.items():
+        if value == target:
+            return key
+    return None
+
+print(&quot;Key for value b:&quot;, reverse_lookup(dict1, &quot;b&quot;))
+print(&quot;Key for value d:&quot;, reverse_lookup(dict1, &quot;d&quot;))">
+          <summary class="qhead"><span class="qtitle">Q8(10). Write a program for reverse lookup in a dictionary.</span><span class="qmeta">Q8(10)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>dict1 = {&quot;1&quot;: &quot;a&quot;, &quot;2&quot;: &quot;b&quot;, &quot;3&quot;: &quot;c&quot;, &quot;4&quot;: &quot;d&quot;}
+
+def reverse_lookup(my_dict, target):
+    for key, value in my_dict.items():
+        if value == target:
+            return key
+    return None
+
+print(&quot;Key for value b:&quot;, reverse_lookup(dict1, &quot;b&quot;))
+print(&quot;Key for value d:&quot;, reverse_lookup(dict1, &quot;d&quot;))</code></pre>
+            </div>
+          </div>
+        </details>
+<details class="question" data-search="Q8(11) Q8(11). Write a program to accept a radius and pass it to a function that returns area and circumference using a tuple. import math
+
+def get_circle_details(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return area, circumference
+
+radius = float(input(&quot;Enter radius:&quot;))
+area, circumference = get_circle_details(radius)
+
+print(f&quot;Area: {area:.2f}&quot;)
+print(f&quot;Circumference: {circumference:.2f}&quot;)">
+          <summary class="qhead"><span class="qtitle">Q8(11). Write a program to accept a radius and pass it to a function that returns area and circumference using a tuple.</span><span class="qmeta">Q8(11)　＋</span></summary>
+          <div class="qbody">
+            <div class="codewrap">
+              <div class="codehead"><span>Python code</span><button class="copy-btn" type="button">Copy code</button></div>
+              <pre><code>import math
+
+def get_circle_details(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return area, circumference
+
+radius = float(input(&quot;Enter radius:&quot;))
+area, circumference = get_circle_details(radius)
+
+print(f&quot;Area: {area:.2f}&quot;)
+print(f&quot;Circumference: {circumference:.2f}&quot;)</code></pre>
+            </div>
+          </div>
+        </details>
+  </div>
+  <div class="empty" id="empty">No matching questions found. Try another keyword.</div>
+</main>
+<footer>Tip: Click a question to open its answer. Use Copy code for the complete program. NumPy questions require NumPy to be installed.</footer>
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('.question')];
+const sections=[...document.querySelectorAll('.section-title')];
+const stats=document.getElementById('stats');
+const empty=document.getElementById('empty');
+const toggleAll=document.getElementById('toggleAll');
+function updateSearch(){
+ const term=search.value.trim().toLowerCase();let visible=0;
+ cards.forEach(card=>{const match=!term||card.dataset.search.toLowerCase().includes(term);card.style.display=match?'':'none';if(match)visible++;});
+ sections.forEach(section=>{let next=section.nextElementSibling,found=false;while(next&&!next.classList.contains('section-title')){if(next.classList.contains('question')&&next.style.display!=='none')found=true;next=next.nextElementSibling;}section.style.display=found?'':'none';});
+ empty.style.display=visible?'none':'block';stats.textContent=`${visible} question${visible===1?'':'s'} shown`;
+}
+search.addEventListener('input',updateSearch);
+document.getElementById('clear').addEventListener('click',()=>{search.value='';updateSearch();search.focus();});
+toggleAll.addEventListener('click',()=>{const visible=cards.filter(c=>c.style.display!=='none');const open=visible.some(c=>!c.open);visible.forEach(c=>c.open=open);toggleAll.textContent=open?'Close all':'Open all';});
+cards.forEach(card=>{const summary=card.querySelector('summary');card.addEventListener('toggle',()=>{const meta=summary.querySelector('.qmeta');meta.textContent=meta.textContent.replace(/[＋−]/g,'').trim()+(card.open?'　−':'　＋');});});
+document.querySelectorAll('.copy-btn').forEach(btn=>{btn.addEventListener('click',async()=>{const code=btn.closest('.codewrap').querySelector('code').textContent;try{await navigator.clipboard.writeText(code);btn.textContent='Copied!';}catch(e){const ta=document.createElement('textarea');ta.value=code;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();btn.textContent='Copied!';}setTimeout(()=>btn.textContent='Copy code',1300);});});
+updateSearch();
+</script>
+</body>
+</html>

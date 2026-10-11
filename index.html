@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programming Exams</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0d10;
+      color: #edf1f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: radial-gradient(ellipse at top left, #19212a 0, transparent 42%), #0b0d10;
+    }
+
+    main {
+      width: min(100%, 560px);
+      padding: 36px;
+      border: 1px solid #2a323b;
+      border-radius: 20px;
+      background: #13171c;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 6vw, 2.5rem);
+    }
+
+    p {
+      margin: 12px 0 28px;
+      color: #a0aab5;
+    }
+
+    nav {
+      display: grid;
+      gap: 14px;
+    }
+
+    .exam-button {
+      display: block;
+      padding: 16px 20px;
+      border: 1px solid #ff895f;
+      border-radius: 12px;
+      background: #ff895f;
+      color: #17110e;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 150ms ease, transform 150ms ease;
+    }
+
+    .exam-button:hover {
+      transform: translateY(-2px);
+      background: #ffa17e;
+    }
+
+    .exam-button:focus-visible {
+      outline: 3px solid #edf1f5;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Choose an Exam</h1>
+    <p>Select the exam you want to open.</p>
+    <nav aria-label="Exam pages">
+      <a class="exam-button" href="./python_practicals_exam_revision.html">Python Programming Exam</a>
+      <a class="exam-button" href="./cpp_data_structures_exam_revision%20(1).html">Data Structure Exam</a>
+    </nav>
+  </main>
+</body>
+</html>
